@@ -23,7 +23,7 @@ const jobRoutes = require("./routes/jobRoutes");
 const applicationRoutes = require("./routes/applicationRoutes");
 
 const app = express();
-
+app.set("trust proxy", 1);
 // ── Connect to Database ────────────────────────────────────────────────────────
 connectDB();
 
